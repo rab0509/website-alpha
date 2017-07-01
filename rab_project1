@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Rob Bogan's 1st HTML5 Web Site</title>
+    </head>
+    <body>
+      <header>
+        <nav>
+            <a href="/home/">Home</a> |
+            <a href="/portfolio/">Portfolio</a> |
+            <a href="/contact/">Contact</a> |
+        </nav>
+      </header>
+      <section>
+        <h1>About Me</h1>
+        <img src="">
+        <p>My name is Rob Bogan and I am an aspiring software developer from Chandler, Ariziona. I have a diverse background which 
+          includes work as a COBOL programmer (back in the day!), a digital IC design engineer, a volunteer with St.Vincent de Paul, 
+          and a K-12 Substitute Teacher. I guess you might call me a <b>"Renaissance Man"</b></p>
+      </section>
+      <section>
+        <h1>My Background</h1>
+        <p>I have a somewhat of a diverse background. I have a B.S. in Math from the University of the District of Columbia. I have a 
+          B.S.E.E. from Howard University, and I have a M.B.A. from the University of Phoenix. I have worked as a COBOL programmer 
+          (back in the day!) for Booz-Allen and Hamilton, a digital IC design engineer for several high-tech companies, a volunteer with St.Vincent de Paul, 
+          and a K-12 Substitute Teacher with the Chandler Unified School District. I guess you might call me a <b>"Renaissance Man"</b></p>
+      </section>
+      <section>
+        <h1>Why Programming?</h1>
+          <p></p>
+      </section>
+      <footer>
+        <nav>
+            <a href="/facebook/">Facebook</a> |
+            <a href="/linkedin/">LinkedIn</a> |
+            <a href="/gethub/">GitHub</a> |    
+        </nav>
+      </footer>
+    </body>
+  </html>
