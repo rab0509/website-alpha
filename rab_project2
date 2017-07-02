@@ -1,35 +1,32 @@
 <!DOCTYPE html>
   <html>
-      <head>
+    <head>
       <title>Rob Bogan's Portfolio Page</title>
     </head>
       <body>
       <header>
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="portfolio.html">Portfolio</a> |
-            <a href="contact.html">Contact</a>
+          <a href="index.html">Home</a> |
+          <a href="portfolio.html">Portfolio</a> |
+          <a href="contact.html">Contact</a>
         </nav>
       </header>
-      <section>
-        <h1>Rob Bogan's Portfolio</h1> 
+      <h1>Rob Bogan's Portfolio</h1> 
+      <ul>
+        <li>"Coding from Scratch" HTML5 Home Page/Portfolio/Contact Project</li><br>
           <ul>
-            <li>"Coding from Scratch" HTML5 Home Page/Portfolio/Contact Project</li><br>
+            <li>This is my 1st Portfolio entry for the Coder Camps "Coding from Scratch" course. This
+                project demonstrates the concepts covered thus far in the "HTML Basics" section of the
+                course and includes the use of:</li><br>
               <ul>
-                <li>This is my 1st Portfolio entry for the Coder Camps "Coding from Scratch" course. This
-                  project demonstrates the concepts covered thus far in the "HTML Basics" section of the
-                  course and includes the use of:</li><br>
-                  <ul>
-                    <li>Document Structure</li>
-                    <li>Structure Elements</li>
-                    <li>Page Content Elements</li>
-                    <li>Tables</li>
-                    <li>HTML Forms</li>
-                  </ul>
-              <ul>
+                <li>Document Structure</li>
+                <li>Structure Elements</li>
+                <li>Page Content Elements</li>
+                <li>Tables</li>
+                <li>HTML Forms</li>
+              </ul>
           </ul>
-      </ul>
-      <br>
+      </ul><br>
       <footer>
         <a href="https://www.facebook.com/robert.bogan.50">Facebook</a> |
         <a href="https://www.linkedin.com/in/robert-bogan-a4a49832/">LinkedIn</a> |
