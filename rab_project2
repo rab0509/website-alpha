@@ -1,3 +1,25 @@
 <!DOCTYPE html>
   <html>
+      <body>
+      <header>
+        <nav>
+            <a href="/home/">Home</a> |
+            <a href="/portfolio/">Portfolio</a> |
+            <a href="/contact/">Contact</a> |
+        </nav>
+      </header>
+      <ul>
+        <li>Portfolio Website</li>
+          <ul>
+            <li>This is my first website thast I created in the "Coding from Scratch" course using HTML5</li>
+          </ul>
+      </ul>
+      <footer>
+        <nav>
+            <a href="/facebook/">Facebook</a> |
+            <a href="/linkedin/">LinkedIn</a> |
+            <a href="/gethub/">GitHub</a> |    
+        </nav>
+      </footer>
+    </body>
   </html>
