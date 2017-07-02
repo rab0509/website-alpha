@@ -22,7 +22,7 @@
       </table>
       <form action="https://formspree.io/bogabrab@gmail.com" method="POST">
         <label> <b><i>Name</i></b> <input type="text" id="Name" name="Name"></label><br>
-        <label> <b><i>Email</i></b> <input type=text id="Email" name="Email"></label><br>
+        <label> <b><i>Email</i></b> <input type=text id="Email" name="Email"></label><br><br>
         <label> <b><i>Message</i></b></label> <textarea rows="10" cols="30" name="Message"></textarea><br><br>
         <input type="submit" value="Submit">
       </form>
