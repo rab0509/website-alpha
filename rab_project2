@@ -16,7 +16,16 @@
           <ul>
             <li>"Coding from Scratch" HTML5 Home Page/Portfolio/Contact Project</li>
               <ul>
-                <li>This is my 1st Portfolio entry for the Coder Camps "Coding from Scratch" course</li><br>
+                <li>This is my 1st Portfolio entry for the Coder Camps "Coding from Scratch" course. This
+                  project demonstrates the concepts covered thus far in the "HTML Basics" section of the
+                  course and includes the use of:</li><br>
+                  <ul>
+                    <li>Document Structure</li>
+                    <li>Structure Elements</li>
+                    <li>Page Content Elements</li>
+                    <li>Tables</li>
+                    <li>HTML Forms</li>
+                  </ul>
               <ul>
           </ul>
       </ul>
