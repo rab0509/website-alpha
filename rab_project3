@@ -15,10 +15,10 @@
             <a href="https://www.linkedin.com/in/robert-bogan-a4a49832/">LinkedIn</a> |
             <a href="https://github.com/rab0509/website-alpha/">GitHub</a>  
         </nav><br>
-      <form method="get">
+      <form action="https://formspree.io/bogabrab@gmail.com" method="POST">
         <label> <b><i>Name</i></b> <input type="text" id="Name" name="Name"></label><br>
         <label> <b><i>Email</i></b> <input type=text id="Email" name="Email"></label><br>
-        <label> <b><i>Message</i></b></label> <textarea rows="5" cols="10" name="Message"></textarea><br><br>
+        <label> <b><i>Message</i></b></label> <textarea rows="50" cols="25" name="Message"></textarea><br><br>
         <input type="submit" value="Submit">
       </form>
     </body>
