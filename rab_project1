@@ -13,17 +13,17 @@
       </header>
       <section>
         <h1>About Me</h1>
-        <img src="https://www.instagram.com/p/BWDhKEsjvUn/">
+        <img src="https://instagram.fphx1-2.fna.fbcdn.net/t51.2885-19/s150x150/19623374_1383414918374962_7562641168563961856_a.jpg">
         <p>My name is Rob Bogan and I am an aspiring software developer from Chandler, Ariziona. I have a diverse background which 
           includes work as a COBOL programmer (back in the day!), a digital IC design engineer, a volunteer with St.Vincent de Paul, 
-          and a K-12 Substitute Teacher. I guess you might call me a <b>"Renaissance Man"</b></p>
+          and a K-12 Substitute Teacher. I guess you might call me a <b>"Renaissance Man".</b></p>
       </section>
       <section>
         <h1>My Background</h1>
         <p>I have a somewhat of a diverse background. I have a B.S. in Math from the University of the District of Columbia. I have a 
           B.S.E.E. from Howard University, and I have a M.B.A. from the University of Phoenix. I have worked as a COBOL programmer 
           (back in the day!) for Booz-Allen and Hamilton, a digital IC design engineer for several high-tech companies, a volunteer with St.Vincent de Paul, 
-          and a K-12 Substitute Teacher with the Chandler Unified School District. I guess you might call me a <b>"Renaissance Man"</b></p>
+          and a K-12 Substitute Teacher with the Chandler Unified School District.</b></p>
       </section>
       <section>
         <h1>Why Programming?</h1>
@@ -35,6 +35,7 @@
       <footer>
         <a href="https://www.facebook.com/robert.bogan.50">Facebook</a> |
         <a href="https://www.linkedin.com/in/robert-bogan-a4a49832/">LinkedIn</a> |
+        <a href="https://www.instagram.com/boganr0509"<Instagram</a> |
         <a href="https://github.com/rab0509">GitHub</a>  
       </footer>
     </body>
