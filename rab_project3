@@ -16,15 +16,13 @@
       <div style="position:fixed;bottom: 0;left: 0;background-color:orange;border-style:solid;border-color:red">
         <a href="mailto:boganrab@gmail.com">boganrab@gmail.com</a>
       </div>
-        <table>
-          <tr>
-            <div style="background-color:yellow;border-style:solid">
-              <td><a href="https://www.facebook.com/robert.bogan.50">Facebook</a></td>
-              <td><a href="https://www.linkedin.com/in/robert-bogan-a4a49832/">LinkedIn</a></td>
-              <td><a href="https://github.com/rab0509">GitHub</a></td>  
-            </div>
-          </tr>
-        </table>
+      <table style="background-color:yellow;border-style:solid">
+      <tr>
+        <td><a href="https://www.facebook.com/robert.bogan.50">Facebook</a></td>
+        <td><a href="https://www.linkedin.com/in/robert-bogan-a4a49832/">LinkedIn</a></td>
+        <td><a href="https://github.com/rab0509">GitHub</a></td>  
+       </tr>
+      </table>
       <form action="https://formspree.io/bogabrab@gmail.com" method="POST">
         <label> <b><i>Name</i></b> <input type="text" id="Name" name="Name"></label><br>
         <label> <b><i>Email</i></b> <input type=text id="Email" name="Email"></label><br><br>
