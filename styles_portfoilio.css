@@ -6,3 +6,10 @@ p {
 body {
   background-color: #0ffff0;
 }  
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
