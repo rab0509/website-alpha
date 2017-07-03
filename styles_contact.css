@@ -8,3 +8,10 @@ p {
 body {
   background-color: #10ff10;
 } 
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
