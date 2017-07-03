@@ -2,6 +2,7 @@
   <html>
     <head>
       <title>Rob Bogan's Contact Page</title>
+      <link rel="stylesheet" type="text/css" href="styles_contact.css">
     </head>
     <body>
       <header>
