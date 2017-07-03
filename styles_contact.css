@@ -3,6 +3,7 @@ p {
   color:green;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   text-align: center
+  width: 25%
 }
 body {
   background-color: #10ff10;
