@@ -2,6 +2,7 @@
   <html>
     <head>
       <title>Rob Bogan's Portfolio Page</title>
+      <link rel="stylesheet" type="text/css" href="styles_portfolio.css">
     </head>
       <body>
       <header>
