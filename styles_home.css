@@ -1,7 +1,8 @@
 /*styles_home.css*/
 p {
+  color:red
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  color:red;
+  text-align: center
 }
 body {
   background-color: #0ffff0;
