@@ -13,8 +13,9 @@
         </nav>
       </header>
       <h1>Contact Me</h1>
-      <div style="background-color:orange;text-align:center;border:red">
-        <a href="mailto:boganrab@gmail.com">boganrab@gmail.com</a><br> 
+      <div style="position:fixed;bottom: 0;left: 0;background-color:orange;border-style:solid;border-color:red">
+        <a href="mailto:boganrab@gmail.com">boganrab@gmail.com</a>
+      </div>
       </div>
       <table>
         <tr>
