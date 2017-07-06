@@ -4,7 +4,7 @@ myButton.addEventListener("click", function(){
   process_data();
 });
 
-function process_data() {
+function process_data() {                                               // When the button is clicked, process the textarea contents
   var js_message = document.getElementById("js_project").textContent;   // put textarea contents into a string variable
   var MessageStringLength = js_message.length();                        // Calc the string variable length
   var MessageStringArray = []; 		                                      // create an empty MessageStringArray array
@@ -28,8 +28,6 @@ function process_data() {
   
   // need to display (TotNumWords, TotNumWS, AvgWPS) on the Contact page
 }
-
-// ------------------  Functions  -------------------------------------
 
 function calcWordCnt(MessageStringArray, MessageStringLength){          // Calc tot num of words and whitespaces in 
                                                                         // MessageStringArray
