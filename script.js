@@ -1,62 +1,60 @@
-var myButton = document.getElementById("js_project");
+function process_data() {                                               // when the button is clicked, process the textarea contents
+   
+   var js_message = document.getElementById("text-data");               // 
+   var y = js_message.elements["inputText"].value;                      // put textarea contents into a string variable
+   var MessageStringLength = y.length;                                  // calculate the string variable length
+   var MessageStringArray = []; 		                                    // create an empty MessageStringArray array
 
-myButton.addEventListener("click", function(){
-  alert("Click!!");
-  //process_data();
-});
+   for (var i = 0; i < MessageStringLength; i++) {
+     MessageStringArray[i] = y.charAt(i);                               // populate the MessageStringArray array
+   }
 
-function process_data() {                                               // When the button is clicked, process the textarea contents
-  var js_message = document.getElementById("js_project").textContent;   // put textarea contents into a string variable
-  var MessageStringLength = js_message.length();                        // Calc the string variable length
-  var MessageStringArray = []; 		                                      // create an empty MessageStringArray array
-
-// ---------------------  Load the string variable contents into the string array  --------
-
-  for (var i = 0; i < MessageStringLength; i++) {
-    MessageStringArray[i] = js_message.charAt(i);                       // populate the MessageStringArray array
+  if (MessageStringLength === 0) {
+    alert("Please enter text in textarea before clicking the stats button!");  // Error Handling
   }
-  
-// -------------------  Calculate textarea data  -------------------------------------
+  else {
+  // -------------------  Process the textarea data  -------------------------------------
 
-  var calcTextData = [];                  	                             //create an empty calcTextData array
+    var calcTextData = calcData(MessageStringArray, MessageStringLength);	     // call function to calc stats on textarea data
 
-  calcTextData = calcWordCnt(MessageStringArray, MessageStringLength);	 // calc the word and sentence counts
+    var TotNumWords = calcTextData[0];		                                     // assign total number of words to a variable
+    var TotNumWS = calcTextData[1];			                                       // assign total number of whitespaces to a variable
+    var TotNumSen = calcTextData[2];		                                       // assign total number of sentences to a variable
+    var AvgWPS = calcTextData[3];			                                         // assign total number of whitespaces to a variable
 
-  var TotNumWords = calcTextData[0];		                                 // 
-  var TotNumWS = calcTextData[1];			                                   // 
+    // Display the calculated results of the textarea entry to the user
 
-  var AvgWPS = calcAvgWPS(MessageStringArray, MessageStringLength, TotNumWords); // calc the avg word per sentence
-  
-  // need to display (TotNumWords, TotNumWS, AvgWPS) on the Contact page
-}
-
-function calcWordCnt(MessageStringArray, MessageStringLength){          // Calc tot num of words and whitespaces in 
-                                                                        // MessageStringArray
-  var tnw_m1 = 0;                                                       // init (total number of words minus 1)
-  var tnw = 0;                                                          // init (total number of words)
-  var calcData = [];                                                    // create an empty calData array
-  
-  for (var j = 0; j < MessageStringLength; j++) {
-    if (MessageStringArray[j] === " ")
-      tnw_m1 = tnw_m1++;                                                                                
+    document.getElementById("row1").innerHTML="Number of Words Typed: "+TotNumWords;
+    document.getElementById("row2").innerHTML="Number of Sentences Typed: "+TotNumSen;
+    document.getElementById("row3").innerHTML="Number of Spaces in Textarea: "+TotNumWS;
+    document.getElementById("row4").innerHTML="Avg. Words per Sentence: "+AvgWPS;
+    }
   }
 
-  calcData[0] = tnw = tnw_m1 + 1;                                       // assign tnw to calcData array
-  calcData[1] = tnws = tnw_m1;                                          // assign tnws to calcData array
+function calcData(MessageStringArray, MessageStringLength){              // Calculate total number of words and 
+                                                                         // whitespaces in MessageStringArray
+   
+  var dataResults = [];                  	                               // create an empty dataResults array that will  
+                                                                         // be used to store computed data
 
-  return calcData;                                                      // pass back calcData
-} 
+  var tnw_m1 = 0;                                                        // initialize (total number of words minus 1)
+  var tnw = 0;                                                           // initialize (total number of words)
+  var tns = 0;                                                           // initialize total number of sentences
 
-// -- Calculate the average number of words per sentence in the string array ----
+// -- Calc total number of words, whitespaces, sentences, and avg. no. of words/sentence in the string array ---- 
 
-function calcAvgWPS(MessageStringArray, MessageStringLength, tnw){      // Calc avg num of words per sentence in 
-                                                                        // MessageStringArray
-  var tns = 0;                                                          // init Total number of words per sentence
-  
-  for (var k = 0; k < MessageStringLength; k++) {
-    if (MessageStringArray[k] === ".")
-      tns = tns++;
+  for (var j = 0; j < MessageStringLength; j++) {                        
+    if (MessageStringArray[j] === " ") {                                 
+      tnw_m1++;                                                          // count whitespaces                     
+    } else if (MessageStringArray[j] === "." || MessageStringArray[j] === "?" || MessageStringArray[j] === "!") {
+      tns++;                                                             // count sentences
+    }
   }
-
-  return (tnw / tns);
+  
+  dataResults[0] = tnw = tnw_m1 + 1;                                     // assign tnw to calcData array (words)
+  dataResults[1] = tnws = tnw_m1;                                        // assign tnws to calcData array (whitespaces)
+  dataResults[2] = tns;                                                  // assign tns to calcData array (sentences)
+  dataResults[3] = (tnw / tns);                                          // assign avgwps to calcData array (average)
+  
+  return dataResults;                                                    // pass back computed data
 }
