@@ -7,6 +7,10 @@
   background-color: #10ff10;
   width: 25%;
 }
+.results {
+  text-align: left;
+  width: 100%;
+}
 /* -- Class Definition Section -- */
 .home-portfolio {
   position: relative;
