@@ -1,49 +1,53 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>Rob Bogan's Contact Page</title>
-    <style>
-      nav {
-        color: #f2f2f2;
-        display: block;
-        border-style:solid;
-        border-color:black;
-        background-color:#f0f0f0;
-        text-align: center;
-      }
+    <head>
+      <title>Rob Bogan's Home Page</title>
+      <style>
+        nav {
+          color: #f2f2f2;
+          display: block;
+          border-style:solid;
+          border-color:black;
+          background-color:#f0f0f0;
+          text-align: center;
+        }
       </style>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body id="contact">
-    <header>
-      <nav>
-        <a href="index.html">Home</a> |
-        <a href="portfolio.html">Portfolio</a> |
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
-    <h1>Contact Me</h1>
-      <table style="background-color:yellow;border-style:solid;border-color:brown">
-      <tr>
-        <td><a href="https://www.facebook.com/robert.bogan.50">Facebook</a></td>
-        <td><a href="https://www.linkedin.com/in/robert-bogan-a4a49832/">LinkedIn</a></td>
-        <td><a href="https://www.instagram.com/boganr0509">Instagram</a></td>
-        <td><a href="https://github.com/rab0509">GitHub</a></td>  
-      </tr>
-    </table>
-    <form action="https://formspree.io/bogabrab@gmail.com" method="POST">    
-      <input type="text" placeholder="Name"><br>
-      <input type="text" placeholder="Email"><br>
-      <textarea rows="10" cols="35" placeholder="Message"></textarea><br>
-      <input type="submit" value="Submit">
-    </form>
-    <form id="js_project">    
-      <textarea rows="10" cols="55"></textarea><br>
-      <input type="submit" value="Click here for textarea stats!">
-    </form>
-    <div style="left: 0;bottom: 0; position: relative;background-color:#f0f0f0;border-style:solid;border-color:red">
-      <a href="mailto:boganrab@gmail.com">boganrab@gmail.com</a>
-    </div>
-    <script src="script.js" type="text/javascript"></script>
-  </body>
-</html>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body id="home">
+      <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+      <section>
+        <h1>About Me</h1>
+        <img src="https://instagram.fphx1-2.fna.fbcdn.net/t51.2885-19/s150x150/19623374_1383414918374962_7562641168563961856_a.jpg">
+        <p>My name is Rob Bogan and I am an aspiring software developer from Chandler, Ariziona. I have a diverse background which 
+          includes work as a COBOL programmer (back in the day!), a digital IC design engineer, a volunteer with St.Vincent de Paul, 
+          and a K-12 Substitute Teacher. I guess you might call me a <b>"Renaissance Man".</b></p>
+      </section>
+      <section>
+        <h1>My Background</h1>
+        <p>I have a somewhat of a diverse background. I have a B.S. in Math from the University of the District of Columbia. I have a 
+          B.S.E.E. from Howard University, and I have a M.B.A. from the University of Phoenix. I have worked as a COBOL programmer 
+          (back in the day!) for Booz-Allen and Hamilton, a digital IC design engineer for several high-tech companies, a volunteer
+          with St.Vincent de Paul, and a K-12 Substitute Teacher with the Chandler Unified School District.</p>
+      </section>
+      <section>
+        <h1>Why Programming?</h1>
+          <p>What fascinates me about programming is how the scope of software development, data management, and data security has 
+          come to touch almost every fabric of our lives today. The field of software development offers a myriad of opportunities
+          today for programmers who are motivated to tackle the challenges facing an ever-more inter-connected world. I want to be
+          a software developer who is a problem solver helping meet the challenges of this industry.</p>
+      </section>
+      <footer class="home-portfolio">
+        <a href="https://www.facebook.com/robert.bogan.50">Facebook</a> |
+        <a href="https://www.linkedin.com/in/robert-bogan-a4a49832/">LinkedIn</a> |
+        <a href="https://www.instagram.com/boganr0509">Instagram</a> |
+        <a href="https://github.com/rab0509">GitHub</a>  
+      </footer>
+      <script src="script.js" type="text/javascript"></script>
+    </body>
+  </html>
