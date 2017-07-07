@@ -1,7 +1,8 @@
 var myButton = document.getElementById("js_project");
 
 myButton.addEventListener("click", function(){
-  process_data();
+  alert("Click!!");
+  //process_data();
 });
 
 function process_data() {                                               // When the button is clicked, process the textarea contents
