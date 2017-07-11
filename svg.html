@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rob Bogan's Scalable Vector Graphics (SVG) Example</title>
+	</head>
+	<body>
+		<svg width="2000" height="2000">
+			<defs>
+				<filter id="our-effect-id">
+					<feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+				</filter>
+			</defs>
+			<circle id="orange-circ" cx="700" cy="100" r="75" stroke="blue" stroke-width="4" fill="orange" filter="url(#our-effect-id)"/>
+			<rect id="red-rect" width="300" height="100" x="400" y="250" fill="red">
+				<animate attributeName="x" from="400" to="700" dur="3s" fill="freeze" repeatCount="5"/>
+			</rect>
+			<line id="green-line" x1="200" y1="200" x2="500" y2="600" style="stroke:green; stroke-width:12; stroke-linecap:round" />
+			<ellipse id="yellow-ellipse" cx="600" cy="500" rx="100" ry="50" stroke="black" stroke-width="1" fill="yellow" filter="url(#our-effect-id)"/>
+			<polyline points="100 100, 150 150, 200 100" style="stroke:red; stroke-linejoin:round; stroke-width:2; fill:grey" />
+			<polygon points="400,310 340,480 490,360 310,360 460,480" style="stroke:green; stroke-width:3; fill:red"/>
+			<path d="M 575 175, H700, V300 Z" style="stroke:brown; stroke-width:3; fill:skyblue;"/>
+		</svg>
+	</body>
+</html>
