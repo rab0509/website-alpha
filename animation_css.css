@@ -1,0 +1,23 @@
+body {
+	padding: 50px; 
+}
+.box {
+	display: inline-block;
+	background: pink;
+	height: 200px;
+	width: 200px;
+	position: telative;
+	animation: myframes 300ms ease-in-out 0s 27 alternate forwards running; /* animation: [name] [dur] [timing-function] [delay(initial)] [iteration-count] [direction] [fill-mode] [play-state] */
+	
+	}
+@keyframes myframes {
+	0% {
+	transform: scale(0);
+	}
+	/*30%, 70% {
+		height: 400px;
+	}*/
+	100% {
+		transform: scale(1);
+	}
+}
