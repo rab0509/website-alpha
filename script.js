@@ -1,13 +1,7 @@
-function process_data() {                                               // when the button is clicked, process the textarea contents
+function process_data() {                                                     // when the button is clicked, process the textarea contents
    
-   var js_message = document.getElementById("text-data");               // 
-   var y = js_message.elements["inputText"].value;                      // put textarea contents into a string variable
-   var MessageStringLength = y.length;                                  // calculate the string variable length
-   var MessageStringArray = []; 		                                    // create an empty MessageStringArray array
-
-   for (var i = 0; i < MessageStringLength; i++) {
-     MessageStringArray[i] = y.charAt(i);                               // populate the MessageStringArray array
-   }
+  var js_message = document.getElementById("text-data")[0].value;             // store the textarea contents into a string array
+  var MessageStringLength = js_message.length;                                // calculate the string variable length
 
   if (MessageStringLength === 0) {
     alert("Please enter text in textarea before clicking the stats button!");  // Error Handling
@@ -15,38 +9,28 @@ function process_data() {                                               // when 
   else {
   // -------------------  Process the textarea data  -------------------------------------
 
-    var calcTextData = calcData(MessageStringArray, MessageStringLength);	     // call function to calc stats on textarea data
-
-    var TotNumWords = calcTextData[0];		                                     // assign total number of words to a variable
-    var TotNumWS = calcTextData[1];			                                       // assign total number of whitespaces to a variable
-    var TotNumSen = calcTextData[2];		                                       // assign total number of sentences to a variable
-    var AvgWPS = calcTextData[3];			                                         // assign total number of whitespaces to a variable
+    var calcTextData = calcData(js_message, MessageStringLength);	             // call function to calc stats on textarea data
 
     // Display the calculated results of the textarea entry to the user
 
-    document.getElementById("row1").innerHTML="Number of Words Typed: "+TotNumWords;
-    document.getElementById("row2").innerHTML="Number of Sentences Typed: "+TotNumSen;
-    document.getElementById("row3").innerHTML="Number of Spaces in Textarea: "+TotNumWS;
-    document.getElementById("row4").innerHTML="Avg. Words per Sentence: "+AvgWPS;
+    document.getElementById("row1").innerHTML="Number of Words Typed: " + calcTextData[0];
+    document.getElementById("row2").innerHTML="Number of Sentences Typed: " + calcTextData[1];
+    document.getElementById("row3").innerHTML="Number of Spaces in Textarea: " + calcTextData[2];
+    document.getElementById("row4").innerHTML="Avg. Words per Sentence: " + calcTextData[3].toFixed(2);
     }
   }
 
-function calcData(MessageStringArray, MessageStringLength){              // Calculate total number of words and 
-                                                                         // whitespaces in MessageStringArray
-   
-  var dataResults = [];                  	                               // create an empty dataResults array that will  
-                                                                         // be used to store computed data
-
+function calcData(js_message, MessageStringLength){                      // Calculate Data
+                                                                         
+  var dataResults = [];                  	                               // create array to store computed data 
   var tnw_m1 = 0;                                                        // initialize (total number of words minus 1)
   var tnw = 0;                                                           // initialize (total number of words)
   var tns = 0;                                                           // initialize total number of sentences
 
-// -- Calc total number of words, whitespaces, sentences, and avg. no. of words/sentence in the string array ---- 
-
   for (var j = 0; j < MessageStringLength; j++) {                        
-    if (MessageStringArray[j] === " ") {                                 
+    if (js_message[j] === " ") {                                 
       tnw_m1++;                                                          // count whitespaces                     
-    } else if (MessageStringArray[j] === "." || MessageStringArray[j] === "?" || MessageStringArray[j] === "!") {
+    } else if (js_message[j] === "." || js_message[j] === "?" || js_message[j] === "!") {
       tns++;                                                             // count sentences
     }
   }
